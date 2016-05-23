@@ -11,8 +11,8 @@ public class ClientFactory {
 	
 	public Twitter getConn(){
 		ConfigurationBuilder builder = new ConfigurationBuilder();
-		builder.setOAuthConsumerKey("PcTGnp5QNBGMGXiGsNEtvv3ZT");
-		builder.setOAuthConsumerSecret("tIOjJFUGSddNLahYPM20runmoA48y8xjggkMaP4uhJ5bEVSXvN");
+		builder.setOAuthConsumerKey("");
+		builder.setOAuthConsumerSecret("");
 		Configuration configuration = builder.build();
 
 		TwitterFactory factory = new TwitterFactory(configuration);
@@ -23,8 +23,8 @@ public class ClientFactory {
 	}
 	
 	protected AccessToken loadAccessToken() {
-		String token = "51522438-pZsjGmFgIDb1lSUzkktNXxfF2t49HZRKKYQ6J4Hx2";
-		String tokenSecret = "b7mW9b4nwQ8vh9r0WkQjJzwrzWb3RD1IE7rBeScBsaVAR";
+		String token = "";
+		String tokenSecret = "";
 		return new AccessToken(token, tokenSecret);
 	}
 	
