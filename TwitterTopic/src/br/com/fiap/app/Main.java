@@ -7,12 +7,14 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			Query query = new Query("#java8");
-			query.setSince("2016-05-06");
-			query.setUntil("2016-05-16");
+			query.setSince("2016-05-15");
+			query.setUntil("2016-05-22");
+			System.out.println("Executando...");
 			new FiltraTwitter(query).imprimeQtdTweetsPorDia()
 				.imprimeQtdRetweetsPorDia().imprimeQtdFavoritosPorDia()
 				.imprimeDataMaisRecente().imprimeDataMenosRecente()
-				.imprimePrimeiroUsuarioDaLista().imprimeUltimoUsuarioDaLista();
+				.imprimePrimeiroUsuarioDaLista().imprimeUltimoUsuarioDaLista().sendTwitter();
+			System.out.println("Executado com sucesso");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

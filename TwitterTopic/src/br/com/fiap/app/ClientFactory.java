@@ -11,8 +11,8 @@ public class ClientFactory {
 	
 	public Twitter getConn(){
 		ConfigurationBuilder builder = new ConfigurationBuilder();
-		builder.setOAuthConsumerKey("E5jxZu2Mdl3YPAVQwSKbAlG16");
-		builder.setOAuthConsumerSecret("A0KFOtOOY0OuaXfIvIuGjSCrmM2K5hDyBCueRXoqHV2gfVfdZP");
+		builder.setOAuthConsumerKey("PcTGnp5QNBGMGXiGsNEtvv3ZT");
+		builder.setOAuthConsumerSecret("tIOjJFUGSddNLahYPM20runmoA48y8xjggkMaP4uhJ5bEVSXvN");
 		Configuration configuration = builder.build();
 
 		TwitterFactory factory = new TwitterFactory(configuration);
