@@ -14,9 +14,9 @@ import twitter4j.TwitterException;
 
 public class FiltraTwitter {
 	
-	Map<LocalDate, Set<TwitterVo>> map;
+	private Map<LocalDate, Set<TwitterVo>> map;
 	
-	Set<String> msgs = new LinkedHashSet<>();
+	private Set<String> msgs = new LinkedHashSet<>();
 	
 	public FiltraTwitter(Query query) throws TwitterException {
 		filtraTwitts(query);
